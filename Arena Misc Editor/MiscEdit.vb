@@ -471,4 +471,9 @@ Public Class MiscEdit
         Return Temp_String
     End Function
 
+    Private Sub MiscEdit_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        If Application.OpenForms().OfType(Of MainMenu).Any Then
+            MainMenu.Close()
+        End If
+    End Sub
 End Class

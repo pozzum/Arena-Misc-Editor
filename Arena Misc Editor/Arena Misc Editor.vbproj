@@ -72,6 +72,18 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="2K18Misc.Designer.vb">
+      <DependentUpon>2K18Misc.vb</DependentUpon>
+    </Compile>
+    <Compile Include="2K18Misc.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainMenu.Designer.vb">
+      <DependentUpon>MainMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MainMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="MiscEdit.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -94,8 +106,15 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="NumericUpDownColumn.vb" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="2K18Misc.resx">
+      <DependentUpon>2K18Misc.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainMenu.resx">
+      <DependentUpon>MainMenu.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MiscEdit.resx">
       <DependentUpon>MiscEdit.vb</DependentUpon>
     </EmbeddedResource>
