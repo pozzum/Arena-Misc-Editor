@@ -27,7 +27,6 @@ Partial Class _2K18Misc
         Me.OpenToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SaveToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
-        Me.SaveFileDialog1 = New System.Windows.Forms.SaveFileDialog()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -61,7 +60,6 @@ Partial Class _2K18Misc
         Me.DataGridViewTextBoxColumn30 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn31 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn32 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn33 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Stadium = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Advert = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.CornerPost = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -94,6 +92,7 @@ Partial Class _2K18Misc
         Me.ApronCM = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.RingMatCM = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Version = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn33 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.MenuStrip1.SuspendLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -135,13 +134,14 @@ Partial Class _2K18Misc
         '
         Me.DataGridView1.AllowUserToAddRows = False
         Me.DataGridView1.AllowUserToDeleteRows = False
-        Me.DataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.ColumnHeader
+        Me.DataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Stadium, Me.Advert, Me.CornerPost, Me.LEDCorner, Me.Rope, Me.Apron, Me.LEDApron, Me.Turnbuckle, Me.Barricade, Me.Fence, Me.CeilingL, Me.SpotL, Me.Stairs, Me.ComSeat, Me.Ringmat, Me.FloorMat, Me.Crowd, Me.IBL, Me.Titantron, Me.Minitron, Me.Wall_L, Me.Wall_R, Me.Header, Me.Floor, Me.MiscO, Me.LightT, Me.CornerCM, Me.RopeCM, Me.TurnbCM, Me.ApronCM, Me.RingMatCM, Me.Version})
-        Me.DataGridView1.Location = New System.Drawing.Point(0, 27)
+        Me.DataGridView1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.DataGridView1.Location = New System.Drawing.Point(0, 24)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.RowHeadersWidth = 55
-        Me.DataGridView1.Size = New System.Drawing.Size(1234, 222)
+        Me.DataGridView1.Size = New System.Drawing.Size(1234, 237)
         Me.DataGridView1.TabIndex = 1
         '
         'DataGridViewTextBoxColumn1
@@ -337,12 +337,6 @@ Partial Class _2K18Misc
         Me.DataGridViewTextBoxColumn32.Name = "DataGridViewTextBoxColumn32"
         Me.DataGridViewTextBoxColumn32.Width = 88
         '
-        'DataGridViewTextBoxColumn33
-        '
-        Me.DataGridViewTextBoxColumn33.HeaderText = "Version"
-        Me.DataGridViewTextBoxColumn33.Name = "DataGridViewTextBoxColumn33"
-        Me.DataGridViewTextBoxColumn33.Width = 67
-        '
         'Stadium
         '
         Me.Stadium.HeaderText = "Stadium"
@@ -535,6 +529,12 @@ Partial Class _2K18Misc
         Me.Version.Name = "Version"
         Me.Version.Width = 67
         '
+        'DataGridViewTextBoxColumn33
+        '
+        Me.DataGridViewTextBoxColumn33.HeaderText = "Version"
+        Me.DataGridViewTextBoxColumn33.Name = "DataGridViewTextBoxColumn33"
+        Me.DataGridViewTextBoxColumn33.Width = 67
+        '
         '_2K18Misc
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -542,11 +542,9 @@ Partial Class _2K18Misc
         Me.ClientSize = New System.Drawing.Size(1234, 261)
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.MenuStrip1)
-        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.MainMenuStrip = Me.MenuStrip1
-        Me.MaximizeBox = False
-        Me.MinimizeBox = False
         Me.Name = "_2K18Misc"
+        Me.ShowIcon = False
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Arena Misc Editor"
         Me.MenuStrip1.ResumeLayout(False)
@@ -562,7 +560,6 @@ Partial Class _2K18Misc
     Friend WithEvents OpenToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents SaveToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents OpenFileDialog1 As OpenFileDialog
-    Friend WithEvents SaveFileDialog1 As SaveFileDialog
     Friend WithEvents DataGridView1 As DataGridView
     Friend WithEvents DataGridViewTextBoxColumn1 As DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn2 As DataGridViewTextBoxColumn

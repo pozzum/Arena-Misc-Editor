@@ -6,4 +6,8 @@
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         _2K18Misc.Show()
     End Sub
+
+    Private Sub Button_Show_Click(sender As Object, e As EventArgs) Handles Button_Show.Click
+        ShowEditor.Show()
+    End Sub
 End Class

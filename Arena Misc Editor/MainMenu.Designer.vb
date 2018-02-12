@@ -24,6 +24,7 @@ Partial Class MainMenu
     Private Sub InitializeComponent()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
+        Me.Button_Show = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Button1
@@ -44,11 +45,21 @@ Partial Class MainMenu
         Me.Button2.Text = "2K18 Misc"
         Me.Button2.UseVisualStyleBackColor = True
         '
+        'Button_Show
+        '
+        Me.Button_Show.Location = New System.Drawing.Point(174, 12)
+        Me.Button_Show.Name = "Button_Show"
+        Me.Button_Show.Size = New System.Drawing.Size(75, 23)
+        Me.Button_Show.TabIndex = 2
+        Me.Button_Show.Text = "Show Edit"
+        Me.Button_Show.UseVisualStyleBackColor = True
+        '
         'MainMenu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(184, 47)
+        Me.ClientSize = New System.Drawing.Size(256, 47)
+        Me.Controls.Add(Me.Button_Show)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
@@ -63,4 +74,5 @@ Partial Class MainMenu
 
     Friend WithEvents Button1 As Button
     Friend WithEvents Button2 As Button
+    Friend WithEvents Button_Show As Button
 End Class

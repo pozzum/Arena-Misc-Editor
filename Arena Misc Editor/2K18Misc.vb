@@ -112,24 +112,6 @@ Public Class _2K18Misc
     End Sub
 
 #End Region
-    Shared Function ReadFile(Filepath As String, pos As Long, requiredbytes As Integer, Optional reverse As Boolean = False) As Byte()
-        Dim value(0 To requiredbytes - 1) As Byte
-        Using reader As New BinaryReader(File.Open(Filepath, FileMode.Open))
-            ' Loop through length of file.
-            Dim fileLength As Long = reader.BaseStream.Length
-            Dim byteCount As Integer = 0
-            reader.BaseStream.Seek(pos, SeekOrigin.Begin)
-            While pos <fileLength And byteCount <requiredbytes
-                value(byteCount) = reader.ReadByte()
-                pos += 1
-                byteCount += 1
-            End While
-        End Using
-        If reverse = True Then
-            Array.Reverse(value, 0, value.Length)
-        End If
-        Return value
-    End Function
     Private Sub SaveToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SaveToolStripMenuItem.Click
         File.Copy(active_file, active_file & ".bak", True)
         Dim Active_Offset As Integer
