@@ -27,16 +27,44 @@ Partial Class ShowEditor
         Me.OpenToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SaveToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
+        Me.StrName = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.S1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.S2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.S3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.S4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.A1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.A2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.B = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.C1 = New System.Windows.Forms.DataGridViewCheckBoxColumn()
         Me.C2 = New System.Windows.Forms.DataGridViewCheckBoxColumn()
         Me.C3 = New System.Windows.Forms.DataGridViewCheckBoxColumn()
         Me.C4 = New System.Windows.Forms.DataGridViewCheckBoxColumn()
         Me.C5 = New System.Windows.Forms.DataGridViewCheckBoxColumn()
+        Me.Stage = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.D1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.D2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Crowd = New System.Windows.Forms.DataGridViewCheckBoxColumn()
         Me.E1 = New System.Windows.Forms.DataGridViewCheckBoxColumn()
         Me.E2 = New System.Windows.Forms.DataGridViewCheckBoxColumn()
         Me.E3 = New System.Windows.Forms.DataGridViewCheckBoxColumn()
+        Me.Ref = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Filter = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.F1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.F2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.G1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.G2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.H1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.H2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.H3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.H4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Bar = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Unknown = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.I1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.I2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.I3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Live = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.J = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
         Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -65,34 +93,8 @@ Partial Class ShowEditor
         Me.DataGridViewTextBoxColumn26 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn27 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn28 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.StrName = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.S1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.S2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.S3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.S4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.A1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.A2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.B = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Stage = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.D1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.D2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Ref = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Filter = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.F1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.F2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.G1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.G2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.H1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.H2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.H3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.H4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Bar = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Unknown = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.I1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.I2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.I3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Live = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.J = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ExportToCSVToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.SaveFileDialog1 = New System.Windows.Forms.SaveFileDialog()
         Me.MenuStrip1.SuspendLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -108,7 +110,7 @@ Partial Class ShowEditor
         '
         'FileToolStripMenuItem
         '
-        Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.OpenToolStripMenuItem, Me.SaveToolStripMenuItem})
+        Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.OpenToolStripMenuItem, Me.SaveToolStripMenuItem, Me.ExportToCSVToolStripMenuItem})
         Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
         Me.FileToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
         Me.FileToolStripMenuItem.Text = "File"
@@ -116,7 +118,7 @@ Partial Class ShowEditor
         'OpenToolStripMenuItem
         '
         Me.OpenToolStripMenuItem.Name = "OpenToolStripMenuItem"
-        Me.OpenToolStripMenuItem.Size = New System.Drawing.Size(103, 22)
+        Me.OpenToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.OpenToolStripMenuItem.Text = "Open"
         '
         'SaveToolStripMenuItem
@@ -139,10 +141,53 @@ Partial Class ShowEditor
         Me.DataGridView1.Size = New System.Drawing.Size(1185, 437)
         Me.DataGridView1.TabIndex = 1
         '
-        'OpenFileDialog1
+        'StrName
         '
-        Me.OpenFileDialog1.FileName = "02.dat"
-        Me.OpenFileDialog1.Filter = "Show Part|02.*|All files (*.*)|*.*"
+        Me.StrName.HeaderText = "StrName"
+        Me.StrName.Name = "StrName"
+        Me.StrName.Width = 73
+        '
+        'S1
+        '
+        Me.S1.HeaderText = "S1"
+        Me.S1.Name = "S1"
+        Me.S1.Width = 45
+        '
+        'S2
+        '
+        Me.S2.HeaderText = "S2"
+        Me.S2.Name = "S2"
+        Me.S2.Width = 45
+        '
+        'S3
+        '
+        Me.S3.HeaderText = "S3"
+        Me.S3.Name = "S3"
+        Me.S3.Width = 45
+        '
+        'S4
+        '
+        Me.S4.HeaderText = "S4"
+        Me.S4.Name = "S4"
+        Me.S4.Width = 45
+        '
+        'A1
+        '
+        Me.A1.HeaderText = "A1"
+        Me.A1.Name = "A1"
+        Me.A1.Width = 45
+        '
+        'A2
+        '
+        Me.A2.HeaderText = "A2"
+        Me.A2.Name = "A2"
+        Me.A2.Width = 45
+        '
+        'B
+        '
+        Me.B.HeaderText = "B"
+        Me.B.Name = "B"
+        Me.B.Width = 39
         '
         'C1
         '
@@ -174,6 +219,24 @@ Partial Class ShowEditor
         Me.C5.Name = "C5"
         Me.C5.Width = 26
         '
+        'Stage
+        '
+        Me.Stage.HeaderText = "Stage"
+        Me.Stage.Name = "Stage"
+        Me.Stage.Width = 60
+        '
+        'D1
+        '
+        Me.D1.HeaderText = "D1"
+        Me.D1.Name = "D1"
+        Me.D1.Width = 46
+        '
+        'D2
+        '
+        Me.D2.HeaderText = "D2"
+        Me.D2.Name = "D2"
+        Me.D2.Width = 46
+        '
         'Crowd
         '
         Me.Crowd.HeaderText = "Crowd"
@@ -199,6 +262,113 @@ Partial Class ShowEditor
         Me.E3.HeaderText = "E3"
         Me.E3.Name = "E3"
         Me.E3.Width = 26
+        '
+        'Ref
+        '
+        Me.Ref.HeaderText = "Ref"
+        Me.Ref.Name = "Ref"
+        Me.Ref.Width = 49
+        '
+        'Filter
+        '
+        Me.Filter.HeaderText = "Filter"
+        Me.Filter.Name = "Filter"
+        Me.Filter.Width = 54
+        '
+        'F1
+        '
+        Me.F1.HeaderText = "F1"
+        Me.F1.Name = "F1"
+        Me.F1.Width = 44
+        '
+        'F2
+        '
+        Me.F2.HeaderText = "F2"
+        Me.F2.Name = "F2"
+        Me.F2.Width = 44
+        '
+        'G1
+        '
+        Me.G1.HeaderText = "G1"
+        Me.G1.Name = "G1"
+        Me.G1.Width = 46
+        '
+        'G2
+        '
+        Me.G2.HeaderText = "G2"
+        Me.G2.Name = "G2"
+        Me.G2.Width = 46
+        '
+        'H1
+        '
+        Me.H1.HeaderText = "H1"
+        Me.H1.Name = "H1"
+        Me.H1.Width = 46
+        '
+        'H2
+        '
+        Me.H2.HeaderText = "H2"
+        Me.H2.Name = "H2"
+        Me.H2.Width = 46
+        '
+        'H3
+        '
+        Me.H3.HeaderText = "H3"
+        Me.H3.Name = "H3"
+        Me.H3.Width = 46
+        '
+        'H4
+        '
+        Me.H4.HeaderText = "H4"
+        Me.H4.Name = "H4"
+        Me.H4.Width = 46
+        '
+        'Bar
+        '
+        Me.Bar.HeaderText = "Bar"
+        Me.Bar.Name = "Bar"
+        Me.Bar.Width = 48
+        '
+        'Unknown
+        '
+        Me.Unknown.HeaderText = "Unkown"
+        Me.Unknown.Name = "Unknown"
+        Me.Unknown.Width = 72
+        '
+        'I1
+        '
+        Me.I1.HeaderText = "I1"
+        Me.I1.Name = "I1"
+        Me.I1.Width = 41
+        '
+        'I2
+        '
+        Me.I2.HeaderText = "I2"
+        Me.I2.Name = "I2"
+        Me.I2.Width = 41
+        '
+        'I3
+        '
+        Me.I3.HeaderText = "I3"
+        Me.I3.Name = "I3"
+        Me.I3.Width = 41
+        '
+        'Live
+        '
+        Me.Live.HeaderText = "Live"
+        Me.Live.Name = "Live"
+        Me.Live.Width = 52
+        '
+        'J
+        '
+        Me.J.HeaderText = "J"
+        Me.J.Name = "J"
+        Me.J.Width = 37
+        '
+        'OpenFileDialog1
+        '
+        Me.OpenFileDialog1.FileName = "02.dat"
+        Me.OpenFileDialog1.Filter = "Show Part|02.*|All files (*.*)|*.*"
         '
         'DataGridViewTextBoxColumn1
         '
@@ -368,173 +538,16 @@ Partial Class ShowEditor
         Me.DataGridViewTextBoxColumn28.Name = "DataGridViewTextBoxColumn28"
         Me.DataGridViewTextBoxColumn28.Width = 37
         '
-        'StrName
+        'ExportToCSVToolStripMenuItem
         '
-        Me.StrName.HeaderText = "StrName"
-        Me.StrName.Name = "StrName"
-        Me.StrName.Width = 73
+        Me.ExportToCSVToolStripMenuItem.Name = "ExportToCSVToolStripMenuItem"
+        Me.ExportToCSVToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.ExportToCSVToolStripMenuItem.Text = "Export to CSV"
+        Me.ExportToCSVToolStripMenuItem.Visible = False
         '
-        'S1
+        'SaveFileDialog1
         '
-        Me.S1.HeaderText = "S1"
-        Me.S1.Name = "S1"
-        Me.S1.Width = 45
-        '
-        'S2
-        '
-        Me.S2.HeaderText = "S2"
-        Me.S2.Name = "S2"
-        Me.S2.Width = 45
-        '
-        'S3
-        '
-        Me.S3.HeaderText = "S3"
-        Me.S3.Name = "S3"
-        Me.S3.Width = 45
-        '
-        'S4
-        '
-        Me.S4.HeaderText = "S4"
-        Me.S4.Name = "S4"
-        Me.S4.Width = 45
-        '
-        'A1
-        '
-        Me.A1.HeaderText = "A1"
-        Me.A1.Name = "A1"
-        Me.A1.Width = 45
-        '
-        'A2
-        '
-        Me.A2.HeaderText = "A2"
-        Me.A2.Name = "A2"
-        Me.A2.Width = 45
-        '
-        'B
-        '
-        Me.B.HeaderText = "B"
-        Me.B.Name = "B"
-        Me.B.Width = 39
-        '
-        'Stage
-        '
-        Me.Stage.HeaderText = "Stage"
-        Me.Stage.Name = "Stage"
-        Me.Stage.Width = 60
-        '
-        'D1
-        '
-        Me.D1.HeaderText = "D1"
-        Me.D1.Name = "D1"
-        Me.D1.Width = 46
-        '
-        'D2
-        '
-        Me.D2.HeaderText = "D2"
-        Me.D2.Name = "D2"
-        Me.D2.Width = 46
-        '
-        'Ref
-        '
-        Me.Ref.HeaderText = "Ref"
-        Me.Ref.Name = "Ref"
-        Me.Ref.Width = 49
-        '
-        'Filter
-        '
-        Me.Filter.HeaderText = "Filter"
-        Me.Filter.Name = "Filter"
-        Me.Filter.Width = 54
-        '
-        'F1
-        '
-        Me.F1.HeaderText = "F1"
-        Me.F1.Name = "F1"
-        Me.F1.Width = 44
-        '
-        'F2
-        '
-        Me.F2.HeaderText = "F2"
-        Me.F2.Name = "F2"
-        Me.F2.Width = 44
-        '
-        'G1
-        '
-        Me.G1.HeaderText = "G1"
-        Me.G1.Name = "G1"
-        Me.G1.Width = 46
-        '
-        'G2
-        '
-        Me.G2.HeaderText = "G2"
-        Me.G2.Name = "G2"
-        Me.G2.Width = 46
-        '
-        'H1
-        '
-        Me.H1.HeaderText = "H1"
-        Me.H1.Name = "H1"
-        Me.H1.Width = 46
-        '
-        'H2
-        '
-        Me.H2.HeaderText = "H2"
-        Me.H2.Name = "H2"
-        Me.H2.Width = 46
-        '
-        'H3
-        '
-        Me.H3.HeaderText = "H3"
-        Me.H3.Name = "H3"
-        Me.H3.Width = 46
-        '
-        'H4
-        '
-        Me.H4.HeaderText = "H4"
-        Me.H4.Name = "H4"
-        Me.H4.Width = 46
-        '
-        'Bar
-        '
-        Me.Bar.HeaderText = "Bar"
-        Me.Bar.Name = "Bar"
-        Me.Bar.Width = 48
-        '
-        'Unknown
-        '
-        Me.Unknown.HeaderText = "Unkown"
-        Me.Unknown.Name = "Unknown"
-        Me.Unknown.Width = 72
-        '
-        'I1
-        '
-        Me.I1.HeaderText = "I1"
-        Me.I1.Name = "I1"
-        Me.I1.Width = 41
-        '
-        'I2
-        '
-        Me.I2.HeaderText = "I2"
-        Me.I2.Name = "I2"
-        Me.I2.Width = 41
-        '
-        'I3
-        '
-        Me.I3.HeaderText = "I3"
-        Me.I3.Name = "I3"
-        Me.I3.Width = 41
-        '
-        'Live
-        '
-        Me.Live.HeaderText = "Live"
-        Me.Live.Name = "Live"
-        Me.Live.Width = 52
-        '
-        'J
-        '
-        Me.J.HeaderText = "J"
-        Me.J.Name = "J"
-        Me.J.Width = 37
+        Me.SaveFileDialog1.FileName = "02.csv"
         '
         'ShowEditor
         '
@@ -626,4 +639,6 @@ Partial Class ShowEditor
     Friend WithEvents DataGridViewTextBoxColumn26 As DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn27 As DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn28 As DataGridViewTextBoxColumn
+    Friend WithEvents ExportToCSVToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents SaveFileDialog1 As SaveFileDialog
 End Class

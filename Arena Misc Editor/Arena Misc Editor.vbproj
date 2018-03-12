@@ -78,6 +78,12 @@
     <Compile Include="2K18Misc.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="LightColors.Designer.vb">
+      <DependentUpon>LightColors.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LightColors.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="MainMenu.Designer.vb">
       <DependentUpon>MainMenu.vb</DependentUpon>
     </Compile>
@@ -107,6 +113,7 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
     <Compile Include="NumericUpDownColumn.vb" />
+    <Compile Include="SHDCTools.vb" />
     <Compile Include="ShowEditor.Designer.vb">
       <DependentUpon>ShowEditor.vb</DependentUpon>
     </Compile>
@@ -117,6 +124,9 @@
   <ItemGroup>
     <EmbeddedResource Include="2K18Misc.resx">
       <DependentUpon>2K18Misc.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LightColors.resx">
+      <DependentUpon>LightColors.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainMenu.resx">
       <DependentUpon>MainMenu.vb</DependentUpon>

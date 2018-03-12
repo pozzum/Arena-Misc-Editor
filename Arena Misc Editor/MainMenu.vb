@@ -10,4 +10,8 @@
     Private Sub Button_Show_Click(sender As Object, e As EventArgs) Handles Button_Show.Click
         ShowEditor.Show()
     End Sub
+
+    Private Sub Button_Color_Click(sender As Object, e As EventArgs) Handles Button_Color.Click
+        LightColors.Show()
+    End Sub
 End Class

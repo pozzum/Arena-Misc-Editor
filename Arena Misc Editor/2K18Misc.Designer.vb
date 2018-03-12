@@ -28,38 +28,6 @@ Partial Class _2K18Misc
         Me.SaveToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn8 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn9 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn10 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn11 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn12 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn13 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn14 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn15 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn16 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn17 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn18 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn19 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn20 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn21 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn22 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn23 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn24 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn25 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn26 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn27 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn28 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn29 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn30 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn31 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn32 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Stadium = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Advert = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.CornerPost = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -92,7 +60,41 @@ Partial Class _2K18Misc
         Me.ApronCM = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.RingMatCM = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Version = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn8 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn9 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn10 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn11 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn12 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn13 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn14 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn15 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn16 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn17 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn18 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn19 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn20 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn21 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn22 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn23 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn24 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn25 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn26 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn27 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn28 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn29 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn30 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn31 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn32 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn33 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ExportToCSVToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.SaveFileDialog1 = New System.Windows.Forms.SaveFileDialog()
         Me.MenuStrip1.SuspendLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -108,7 +110,7 @@ Partial Class _2K18Misc
         '
         'FileToolStripMenuItem
         '
-        Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.OpenToolStripMenuItem, Me.SaveToolStripMenuItem})
+        Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.OpenToolStripMenuItem, Me.SaveToolStripMenuItem, Me.ExportToCSVToolStripMenuItem})
         Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
         Me.FileToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
         Me.FileToolStripMenuItem.Text = "File"
@@ -116,13 +118,13 @@ Partial Class _2K18Misc
         'OpenToolStripMenuItem
         '
         Me.OpenToolStripMenuItem.Name = "OpenToolStripMenuItem"
-        Me.OpenToolStripMenuItem.Size = New System.Drawing.Size(103, 22)
+        Me.OpenToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.OpenToolStripMenuItem.Text = "Open"
         '
         'SaveToolStripMenuItem
         '
         Me.SaveToolStripMenuItem.Name = "SaveToolStripMenuItem"
-        Me.SaveToolStripMenuItem.Size = New System.Drawing.Size(103, 22)
+        Me.SaveToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.SaveToolStripMenuItem.Text = "Save"
         '
         'OpenFileDialog1
@@ -143,6 +145,198 @@ Partial Class _2K18Misc
         Me.DataGridView1.RowHeadersWidth = 55
         Me.DataGridView1.Size = New System.Drawing.Size(1234, 237)
         Me.DataGridView1.TabIndex = 1
+        '
+        'Stadium
+        '
+        Me.Stadium.HeaderText = "Stadium"
+        Me.Stadium.Name = "Stadium"
+        Me.Stadium.Width = 70
+        '
+        'Advert
+        '
+        Me.Advert.HeaderText = "Advert"
+        Me.Advert.Name = "Advert"
+        Me.Advert.Width = 63
+        '
+        'CornerPost
+        '
+        Me.CornerPost.HeaderText = "CornerPost"
+        Me.CornerPost.Name = "CornerPost"
+        Me.CornerPost.Width = 84
+        '
+        'LEDCorner
+        '
+        Me.LEDCorner.HeaderText = "LEDCorner"
+        Me.LEDCorner.Name = "LEDCorner"
+        Me.LEDCorner.Width = 84
+        '
+        'Rope
+        '
+        Me.Rope.HeaderText = "Rope"
+        Me.Rope.Name = "Rope"
+        Me.Rope.Width = 58
+        '
+        'Apron
+        '
+        Me.Apron.HeaderText = "Apron"
+        Me.Apron.Name = "Apron"
+        Me.Apron.Width = 60
+        '
+        'LEDApron
+        '
+        Me.LEDApron.HeaderText = "LEDApron"
+        Me.LEDApron.Name = "LEDApron"
+        Me.LEDApron.Width = 81
+        '
+        'Turnbuckle
+        '
+        Me.Turnbuckle.HeaderText = "Turnbuckle"
+        Me.Turnbuckle.Name = "Turnbuckle"
+        Me.Turnbuckle.Width = 86
+        '
+        'Barricade
+        '
+        Me.Barricade.HeaderText = "Barricade"
+        Me.Barricade.Name = "Barricade"
+        Me.Barricade.Width = 77
+        '
+        'Fence
+        '
+        Me.Fence.HeaderText = "Fence"
+        Me.Fence.Name = "Fence"
+        Me.Fence.Width = 62
+        '
+        'CeilingL
+        '
+        Me.CeilingL.HeaderText = "CeilingL"
+        Me.CeilingL.Name = "CeilingL"
+        Me.CeilingL.Width = 69
+        '
+        'SpotL
+        '
+        Me.SpotL.HeaderText = "SpotL"
+        Me.SpotL.Name = "SpotL"
+        Me.SpotL.Width = 60
+        '
+        'Stairs
+        '
+        Me.Stairs.HeaderText = "Stairs"
+        Me.Stairs.Name = "Stairs"
+        Me.Stairs.Width = 58
+        '
+        'ComSeat
+        '
+        Me.ComSeat.HeaderText = "ComSeat"
+        Me.ComSeat.Name = "ComSeat"
+        Me.ComSeat.Width = 75
+        '
+        'Ringmat
+        '
+        Me.Ringmat.HeaderText = "Ringmat"
+        Me.Ringmat.Name = "Ringmat"
+        Me.Ringmat.Width = 71
+        '
+        'FloorMat
+        '
+        Me.FloorMat.HeaderText = "FloorMat"
+        Me.FloorMat.Name = "FloorMat"
+        Me.FloorMat.Width = 73
+        '
+        'Crowd
+        '
+        Me.Crowd.HeaderText = "Crowd"
+        Me.Crowd.Name = "Crowd"
+        Me.Crowd.Width = 62
+        '
+        'IBL
+        '
+        Me.IBL.HeaderText = "IBL"
+        Me.IBL.Name = "IBL"
+        Me.IBL.Width = 48
+        '
+        'Titantron
+        '
+        Me.Titantron.HeaderText = "Titantron"
+        Me.Titantron.Name = "Titantron"
+        Me.Titantron.Width = 74
+        '
+        'Minitron
+        '
+        Me.Minitron.HeaderText = "Minitron"
+        Me.Minitron.Name = "Minitron"
+        Me.Minitron.Width = 69
+        '
+        'Wall_L
+        '
+        Me.Wall_L.HeaderText = "Wall_L"
+        Me.Wall_L.Name = "Wall_L"
+        Me.Wall_L.Width = 65
+        '
+        'Wall_R
+        '
+        Me.Wall_R.HeaderText = "Wall_R"
+        Me.Wall_R.Name = "Wall_R"
+        Me.Wall_R.Width = 67
+        '
+        'Header
+        '
+        Me.Header.HeaderText = "Header"
+        Me.Header.Name = "Header"
+        Me.Header.Width = 67
+        '
+        'Floor
+        '
+        Me.Floor.HeaderText = "Floor"
+        Me.Floor.Name = "Floor"
+        Me.Floor.Width = 55
+        '
+        'MiscO
+        '
+        Me.MiscO.HeaderText = "MiscO"
+        Me.MiscO.Name = "MiscO"
+        Me.MiscO.Width = 62
+        '
+        'LightT
+        '
+        Me.LightT.HeaderText = "LightT"
+        Me.LightT.Name = "LightT"
+        Me.LightT.Width = 62
+        '
+        'CornerCM
+        '
+        Me.CornerCM.HeaderText = "CornerCM"
+        Me.CornerCM.Name = "CornerCM"
+        Me.CornerCM.Width = 79
+        '
+        'RopeCM
+        '
+        Me.RopeCM.HeaderText = "RopeCM"
+        Me.RopeCM.Name = "RopeCM"
+        Me.RopeCM.Width = 74
+        '
+        'TurnbCM
+        '
+        Me.TurnbCM.HeaderText = "TurnbCM"
+        Me.TurnbCM.Name = "TurnbCM"
+        Me.TurnbCM.Width = 76
+        '
+        'ApronCM
+        '
+        Me.ApronCM.HeaderText = "ApronCM"
+        Me.ApronCM.Name = "ApronCM"
+        Me.ApronCM.Width = 76
+        '
+        'RingMatCM
+        '
+        Me.RingMatCM.HeaderText = "RingMatCM"
+        Me.RingMatCM.Name = "RingMatCM"
+        Me.RingMatCM.Width = 88
+        '
+        'Version
+        '
+        Me.Version.HeaderText = "Version"
+        Me.Version.Name = "Version"
+        Me.Version.Width = 67
         '
         'DataGridViewTextBoxColumn1
         '
@@ -337,203 +531,22 @@ Partial Class _2K18Misc
         Me.DataGridViewTextBoxColumn32.Name = "DataGridViewTextBoxColumn32"
         Me.DataGridViewTextBoxColumn32.Width = 88
         '
-        'Stadium
-        '
-        Me.Stadium.HeaderText = "Stadium"
-        Me.Stadium.Name = "Stadium"
-        Me.Stadium.Width = 70
-        '
-        'Advert
-        '
-        Me.Advert.HeaderText = "Advert"
-        Me.Advert.Name = "Advert"
-        Me.Advert.Width = 63
-        '
-        'CornerPost
-        '
-        Me.CornerPost.HeaderText = "CornerPost"
-        Me.CornerPost.Name = "CornerPost"
-        Me.CornerPost.Width = 84
-        '
-        'LEDCorner
-        '
-        Me.LEDCorner.HeaderText = "LEDCorner"
-        Me.LEDCorner.Name = "LEDCorner"
-        Me.LEDCorner.Width = 84
-        '
-        'Rope
-        '
-        Me.Rope.HeaderText = "Rope"
-        Me.Rope.Name = "Rope"
-        Me.Rope.Width = 58
-        '
-        'Apron
-        '
-        Me.Apron.HeaderText = "Apron"
-        Me.Apron.Name = "Apron"
-        Me.Apron.Width = 60
-        '
-        'LEDApron
-        '
-        Me.LEDApron.HeaderText = "LEDApron"
-        Me.LEDApron.Name = "LEDApron"
-        Me.LEDApron.Width = 81
-        '
-        'Turnbuckle
-        '
-        Me.Turnbuckle.HeaderText = "Turnbuckle"
-        Me.Turnbuckle.Name = "Turnbuckle"
-        Me.Turnbuckle.Width = 86
-        '
-        'Barricade
-        '
-        Me.Barricade.HeaderText = "Barricade"
-        Me.Barricade.Name = "Barricade"
-        Me.Barricade.Width = 77
-        '
-        'Fence
-        '
-        Me.Fence.HeaderText = "Fence"
-        Me.Fence.Name = "Fence"
-        Me.Fence.Width = 62
-        '
-        'CeilingL
-        '
-        Me.CeilingL.HeaderText = "CeilingL"
-        Me.CeilingL.Name = "CeilingL"
-        Me.CeilingL.Width = 69
-        '
-        'SpotL
-        '
-        Me.SpotL.HeaderText = "SpotL"
-        Me.SpotL.Name = "SpotL"
-        Me.SpotL.Width = 60
-        '
-        'Stairs
-        '
-        Me.Stairs.HeaderText = "Stairs"
-        Me.Stairs.Name = "Stairs"
-        Me.Stairs.Width = 58
-        '
-        'ComSeat
-        '
-        Me.ComSeat.HeaderText = "ComSeat"
-        Me.ComSeat.Name = "ComSeat"
-        Me.ComSeat.Width = 75
-        '
-        'Ringmat
-        '
-        Me.Ringmat.HeaderText = "Ringmat"
-        Me.Ringmat.Name = "Ringmat"
-        Me.Ringmat.Width = 71
-        '
-        'FloorMat
-        '
-        Me.FloorMat.HeaderText = "FloorMat"
-        Me.FloorMat.Name = "FloorMat"
-        Me.FloorMat.Width = 73
-        '
-        'Crowd
-        '
-        Me.Crowd.HeaderText = "Crowd"
-        Me.Crowd.Name = "Crowd"
-        Me.Crowd.Width = 62
-        '
-        'IBL
-        '
-        Me.IBL.HeaderText = "IBL"
-        Me.IBL.Name = "IBL"
-        Me.IBL.Width = 48
-        '
-        'Titantron
-        '
-        Me.Titantron.HeaderText = "Titantron"
-        Me.Titantron.Name = "Titantron"
-        Me.Titantron.Width = 74
-        '
-        'Minitron
-        '
-        Me.Minitron.HeaderText = "Minitron"
-        Me.Minitron.Name = "Minitron"
-        Me.Minitron.Width = 69
-        '
-        'Wall_L
-        '
-        Me.Wall_L.HeaderText = "Wall_L"
-        Me.Wall_L.Name = "Wall_L"
-        Me.Wall_L.Width = 65
-        '
-        'Wall_R
-        '
-        Me.Wall_R.HeaderText = "Wall_R"
-        Me.Wall_R.Name = "Wall_R"
-        Me.Wall_R.Width = 67
-        '
-        'Header
-        '
-        Me.Header.HeaderText = "Header"
-        Me.Header.Name = "Header"
-        Me.Header.Width = 67
-        '
-        'Floor
-        '
-        Me.Floor.HeaderText = "Floor"
-        Me.Floor.Name = "Floor"
-        Me.Floor.Width = 55
-        '
-        'MiscO
-        '
-        Me.MiscO.HeaderText = "MiscO"
-        Me.MiscO.Name = "MiscO"
-        Me.MiscO.Width = 62
-        '
-        'LightT
-        '
-        Me.LightT.HeaderText = "LightT"
-        Me.LightT.Name = "LightT"
-        Me.LightT.Width = 62
-        '
-        'CornerCM
-        '
-        Me.CornerCM.HeaderText = "CornerCM"
-        Me.CornerCM.Name = "CornerCM"
-        Me.CornerCM.Width = 79
-        '
-        'RopeCM
-        '
-        Me.RopeCM.HeaderText = "RopeCM"
-        Me.RopeCM.Name = "RopeCM"
-        Me.RopeCM.Width = 74
-        '
-        'TurnbCM
-        '
-        Me.TurnbCM.HeaderText = "TurnbCM"
-        Me.TurnbCM.Name = "TurnbCM"
-        Me.TurnbCM.Width = 76
-        '
-        'ApronCM
-        '
-        Me.ApronCM.HeaderText = "ApronCM"
-        Me.ApronCM.Name = "ApronCM"
-        Me.ApronCM.Width = 76
-        '
-        'RingMatCM
-        '
-        Me.RingMatCM.HeaderText = "RingMatCM"
-        Me.RingMatCM.Name = "RingMatCM"
-        Me.RingMatCM.Width = 88
-        '
-        'Version
-        '
-        Me.Version.HeaderText = "Version"
-        Me.Version.Name = "Version"
-        Me.Version.Width = 67
-        '
         'DataGridViewTextBoxColumn33
         '
         Me.DataGridViewTextBoxColumn33.HeaderText = "Version"
         Me.DataGridViewTextBoxColumn33.Name = "DataGridViewTextBoxColumn33"
         Me.DataGridViewTextBoxColumn33.Width = 67
+        '
+        'ExportToCSVToolStripMenuItem
+        '
+        Me.ExportToCSVToolStripMenuItem.Name = "ExportToCSVToolStripMenuItem"
+        Me.ExportToCSVToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.ExportToCSVToolStripMenuItem.Text = "Export to CSV"
+        Me.ExportToCSVToolStripMenuItem.Visible = False
+        '
+        'SaveFileDialog1
+        '
+        Me.SaveFileDialog1.FileName = "misc.csv"
         '
         '_2K18Misc
         '
@@ -626,4 +639,6 @@ Partial Class _2K18Misc
     Friend WithEvents ApronCM As DataGridViewTextBoxColumn
     Friend WithEvents RingMatCM As DataGridViewTextBoxColumn
     Friend WithEvents Version As DataGridViewTextBoxColumn
+    Friend WithEvents ExportToCSVToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents SaveFileDialog1 As SaveFileDialog
 End Class

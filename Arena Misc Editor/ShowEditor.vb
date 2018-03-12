@@ -86,6 +86,7 @@ Public Class ShowEditor
             index += 1
             current_poition += &H78
         End While
+        ExportToCSVToolStripMenuItem.Visible = True
     End Sub
 
 
@@ -211,4 +212,37 @@ Public Class ShowEditor
         End Try
         Return RetArray
     End Function
+
+    Private Sub ExportToCSVToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ExportToCSVToolStripMenuItem.Click
+        If SaveFileDialog1.ShowDialog = DialogResult.OK Then
+            Dim headers = (From header As DataGridViewColumn In DataGridView1.Columns.Cast(Of DataGridViewColumn)()
+                           Select header.HeaderText).ToArray
+            Dim rows As List(Of String) = New List(Of String)
+            For Each temprow As DataGridViewRow In DataGridView1.Rows
+                If Not temprow.IsNewRow Then
+                    Dim Tempstring = temprow.HeaderCell.Value.ToString
+                    For Each tempcell As DataGridViewCell In temprow.Cells
+                        If tempcell.ValueType = GetType(CheckBox) Then
+                            MessageBox.Show("Checkbox")
+                            If tempcell.Value Then
+                                Tempstring += ",1"
+                            Else
+                                Tempstring += ",0"
+                            End If
+                        Else
+                            Tempstring += "," & tempcell.Value
+                        End If
+                    Next
+                    rows.Add(Tempstring)
+                End If
+            Next
+            Using sw As New IO.StreamWriter(SaveFileDialog1.FileName)
+                sw.WriteLine("Number," & String.Join(",", headers))
+                For Each r In rows
+                    sw.WriteLine(r)
+                Next
+            End Using
+            MessageBox.Show("File Saved")
+        End If
+    End Sub
 End Class

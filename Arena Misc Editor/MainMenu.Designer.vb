@@ -25,6 +25,7 @@ Partial Class MainMenu
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button_Show = New System.Windows.Forms.Button()
+        Me.Button_Color = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Button1
@@ -54,11 +55,21 @@ Partial Class MainMenu
         Me.Button_Show.Text = "Show Edit"
         Me.Button_Show.UseVisualStyleBackColor = True
         '
+        'Button_Color
+        '
+        Me.Button_Color.Location = New System.Drawing.Point(255, 12)
+        Me.Button_Color.Name = "Button_Color"
+        Me.Button_Color.Size = New System.Drawing.Size(75, 23)
+        Me.Button_Color.TabIndex = 3
+        Me.Button_Color.Text = "Color Edit"
+        Me.Button_Color.UseVisualStyleBackColor = True
+        '
         'MainMenu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(256, 47)
+        Me.ClientSize = New System.Drawing.Size(342, 47)
+        Me.Controls.Add(Me.Button_Color)
         Me.Controls.Add(Me.Button_Show)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
@@ -75,4 +86,5 @@ Partial Class MainMenu
     Friend WithEvents Button1 As Button
     Friend WithEvents Button2 As Button
     Friend WithEvents Button_Show As Button
+    Friend WithEvents Button_Color As Button
 End Class
