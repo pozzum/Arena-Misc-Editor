@@ -67,9 +67,9 @@ Class NumericUpDownEditingControl
     Private rowIndexNum As Integer
 
     Public Sub New()
-        Me.DecimalPlaces = 0
-        Me.Minimum = -1
-        Me.Maximum = 1024
+        Me.DecimalPlaces = 3
+        Me.Minimum = Decimal.MinValue
+        Me.Maximum = Decimal.MaxValue
     End Sub
 
     Public Property EditingControlFormattedValue() As Object Implements IDataGridViewEditingControl.EditingControlFormattedValue

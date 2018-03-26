@@ -23,9 +23,10 @@ Partial Class MainMenu
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.Button_Misc = New System.Windows.Forms.Button()
         Me.Button_Show = New System.Windows.Forms.Button()
         Me.Button_Color = New System.Windows.Forms.Button()
+        Me.Button_Objects = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Button1
@@ -37,14 +38,14 @@ Partial Class MainMenu
         Me.Button1.Text = "2K17 Misc"
         Me.Button1.UseVisualStyleBackColor = True
         '
-        'Button2
+        'Button_Misc
         '
-        Me.Button2.Location = New System.Drawing.Point(93, 12)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(75, 23)
-        Me.Button2.TabIndex = 1
-        Me.Button2.Text = "2K18 Misc"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.Button_Misc.Location = New System.Drawing.Point(93, 12)
+        Me.Button_Misc.Name = "Button_Misc"
+        Me.Button_Misc.Size = New System.Drawing.Size(75, 23)
+        Me.Button_Misc.TabIndex = 1
+        Me.Button_Misc.Text = "2K18 Misc"
+        Me.Button_Misc.UseVisualStyleBackColor = True
         '
         'Button_Show
         '
@@ -64,14 +65,24 @@ Partial Class MainMenu
         Me.Button_Color.Text = "Color Edit"
         Me.Button_Color.UseVisualStyleBackColor = True
         '
+        'Button_Objects
+        '
+        Me.Button_Objects.Location = New System.Drawing.Point(336, 12)
+        Me.Button_Objects.Name = "Button_Objects"
+        Me.Button_Objects.Size = New System.Drawing.Size(75, 23)
+        Me.Button_Objects.TabIndex = 4
+        Me.Button_Objects.Text = "Objects Edit"
+        Me.Button_Objects.UseVisualStyleBackColor = True
+        '
         'MainMenu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(342, 47)
+        Me.ClientSize = New System.Drawing.Size(419, 47)
+        Me.Controls.Add(Me.Button_Objects)
         Me.Controls.Add(Me.Button_Color)
         Me.Controls.Add(Me.Button_Show)
-        Me.Controls.Add(Me.Button2)
+        Me.Controls.Add(Me.Button_Misc)
         Me.Controls.Add(Me.Button1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.MaximizeBox = False
@@ -84,7 +95,8 @@ Partial Class MainMenu
     End Sub
 
     Friend WithEvents Button1 As Button
-    Friend WithEvents Button2 As Button
+    Friend WithEvents Button_Misc As Button
     Friend WithEvents Button_Show As Button
     Friend WithEvents Button_Color As Button
+    Friend WithEvents Button_Objects As Button
 End Class

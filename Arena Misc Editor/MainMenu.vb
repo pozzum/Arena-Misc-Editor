@@ -3,7 +3,7 @@
         MiscEdit.Show()
     End Sub
 
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button_Misc.Click
         _2K18Misc.Show()
     End Sub
 
@@ -13,5 +13,9 @@
 
     Private Sub Button_Color_Click(sender As Object, e As EventArgs) Handles Button_Color.Click
         LightColors.Show()
+    End Sub
+
+    Private Sub Button_Chair_Click(sender As Object, e As EventArgs) Handles Button_Objects.Click
+        ObjectArrayEditor.Show()
     End Sub
 End Class

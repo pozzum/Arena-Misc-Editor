@@ -26,11 +26,11 @@ Partial Class LightColors
         Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.OpenToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SaveToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExportToCSVToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ColorSelectToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
         Me.ColorDialog1 = New System.Windows.Forms.ColorDialog()
-        Me.ExportToCSVToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SaveFileDialog1 = New System.Windows.Forms.SaveFileDialog()
         Me.MenuStrip1.SuspendLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -56,14 +56,21 @@ Partial Class LightColors
         'OpenToolStripMenuItem
         '
         Me.OpenToolStripMenuItem.Name = "OpenToolStripMenuItem"
-        Me.OpenToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.OpenToolStripMenuItem.Size = New System.Drawing.Size(145, 22)
         Me.OpenToolStripMenuItem.Text = "Open"
         '
         'SaveToolStripMenuItem
         '
         Me.SaveToolStripMenuItem.Name = "SaveToolStripMenuItem"
-        Me.SaveToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.SaveToolStripMenuItem.Size = New System.Drawing.Size(145, 22)
         Me.SaveToolStripMenuItem.Text = "Save"
+        '
+        'ExportToCSVToolStripMenuItem
+        '
+        Me.ExportToCSVToolStripMenuItem.Name = "ExportToCSVToolStripMenuItem"
+        Me.ExportToCSVToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.ExportToCSVToolStripMenuItem.Text = "Export to CSV"
+        Me.ExportToCSVToolStripMenuItem.Visible = False
         '
         'ColorSelectToolStripMenuItem
         '
@@ -77,11 +84,11 @@ Partial Class LightColors
         Me.DataGridView1.AllowUserToAddRows = False
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.DataGridView1.Location = New System.Drawing.Point(0, 24)
+        Me.DataGridView1.Location = New System.Drawing.Point(0, 0)
         Me.DataGridView1.MultiSelect = False
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.RowHeadersWidth = 60
-        Me.DataGridView1.Size = New System.Drawing.Size(1185, 437)
+        Me.DataGridView1.Size = New System.Drawing.Size(1185, 461)
         Me.DataGridView1.TabIndex = 1
         '
         'OpenFileDialog1
@@ -89,19 +96,18 @@ Partial Class LightColors
         Me.OpenFileDialog1.FileName = "02.dat"
         Me.OpenFileDialog1.Filter = "Light Color File|00.nibj|All files (*.*)|*.*"
         '
-        'ExportToCSVToolStripMenuItem
+        'SaveFileDialog1
         '
-        Me.ExportToCSVToolStripMenuItem.Name = "ExportToCSVToolStripMenuItem"
-        Me.ExportToCSVToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-        Me.ExportToCSVToolStripMenuItem.Text = "Export to CSV"
+        Me.SaveFileDialog1.FileName = "00.csv"
+        Me.SaveFileDialog1.Filter = "Comma Seperated Value File|*.csv|All files (*.*)|*.*"
         '
         'LightColors
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1185, 461)
-        Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.MenuStrip1)
+        Me.Controls.Add(Me.DataGridView1)
         Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "LightColors"
         Me.ShowIcon = False

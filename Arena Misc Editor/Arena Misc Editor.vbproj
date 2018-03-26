@@ -78,6 +78,12 @@
     <Compile Include="2K18Misc.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="ObjectArrayEditor.Designer.vb">
+      <DependentUpon>ObjectArrayEditor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ObjectArrayEditor.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="LightColors.Designer.vb">
       <DependentUpon>LightColors.vb</DependentUpon>
     </Compile>
@@ -124,6 +130,9 @@
   <ItemGroup>
     <EmbeddedResource Include="2K18Misc.resx">
       <DependentUpon>2K18Misc.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ObjectArrayEditor.resx">
+      <DependentUpon>ObjectArrayEditor.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LightColors.resx">
       <DependentUpon>LightColors.vb</DependentUpon>
