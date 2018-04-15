@@ -50,6 +50,7 @@ Partial Class ObjectArrayEditor
         Me.NumericUpDownColumn4 = New Arena_Misc_Editor.NumericUpDownColumn()
         Me.NumericUpDownColumn5 = New Arena_Misc_Editor.NumericUpDownColumn()
         Me.SaveFileDialog1 = New System.Windows.Forms.SaveFileDialog()
+        Me.AddRowToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         CType(Me.SplitContainer1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SplitContainer1.Panel1.SuspendLayout()
@@ -59,7 +60,7 @@ Partial Class ObjectArrayEditor
         '
         'MenuStrip1
         '
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem, Me.AddRowToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Size = New System.Drawing.Size(684, 24)
@@ -122,7 +123,6 @@ Partial Class ObjectArrayEditor
         Me.DataGridView1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.DataGridView1.Location = New System.Drawing.Point(0, 0)
         Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.RowHeadersVisible = False
         Me.DataGridView1.Size = New System.Drawing.Size(499, 387)
         Me.DataGridView1.TabIndex = 0
         '
@@ -251,6 +251,13 @@ Partial Class ObjectArrayEditor
         Me.SaveFileDialog1.FileName = "00.csv"
         Me.SaveFileDialog1.Filter = "Comma Seperated Value File|*.csv|All files (*.*)|*.*"
         '
+        'AddRowToolStripMenuItem
+        '
+        Me.AddRowToolStripMenuItem.Name = "AddRowToolStripMenuItem"
+        Me.AddRowToolStripMenuItem.Size = New System.Drawing.Size(67, 20)
+        Me.AddRowToolStripMenuItem.Text = "Add Row"
+        Me.AddRowToolStripMenuItem.Visible = False
+        '
         'ObjectArrayEditor
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -303,4 +310,5 @@ Partial Class ObjectArrayEditor
     Friend WithEvents Dec1 As NumericUpDownColumn
     Friend WithEvents Dec2 As NumericUpDownColumn
     Friend WithEvents SaveFileDialog1 As SaveFileDialog
+    Friend WithEvents AddRowToolStripMenuItem As ToolStripMenuItem
 End Class

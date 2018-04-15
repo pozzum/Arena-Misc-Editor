@@ -16,58 +16,67 @@ Public Class ObjectArrayEditor
             If File.Exists(active_file) Then
                 ExportToCSVToolStripMenuItem.Visible = True
                 OpenChairs(active_file)
+                AddRowToolStripMenuItem.Visible = True
             End If
         End If
     End Sub
 
     Private Sub SaveToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SaveToolStripMenuItem.Click
+        DataGridView1.ClearSelection()
         File.Copy(active_file, active_file & ".bak", True)
         Dim Temp_Array As Byte() = Chair_Array
-        For i As Integer = 0 To DataGridView1.RowCount - 1
-            Try
+        Dim Counter As Integer = 0
+        'For i As Integer = 0 To DataGridView1.RowCount - 1
+        Try
+            Do While Counter < DataGridView1.RowCount
                 'Number
-                Buffer.BlockCopy(BitConverter.GetBytes(CInt(DataGridView1(0, i).Value)), 0, Temp_Array, &H24 + i * 8, 4)
+                Buffer.BlockCopy(BitConverter.GetBytes(CInt(DataGridView1(0, Counter).Value)), 0, Temp_Array, &H24 + Counter * 8, 4)
                 'Enabled
-                If DataGridView1(1, i).Value Then
-                    Temp_Array(&H20 + i * 8) = 1
+                If DataGridView1(1, Counter).Value Then
+                    Temp_Array(&H20 + Counter * 8) = 1
                 Else
-                    Temp_Array(&H20 + i * 8) = 0
+                    Temp_Array(&H20 + Counter * 8) = 0
                 End If
                 'Object Names
-                Buffer.BlockCopy(Encoding.ASCII.GetBytes(DataGridView1(2, i).Value), 0, Temp_Array, &H20 + ChairCount * 8 + i * &H30, DataGridView1(2, i).Value.ToString.Length)
+                Buffer.BlockCopy(Encoding.ASCII.GetBytes(DataGridView1(2, Counter).Value), 0, Temp_Array, &H20 + ChairCount * 8 + Counter * &H30, DataGridView1(2, Counter).Value.ToString.Length)
                 'X Float
-                Buffer.BlockCopy(BitConverter.GetBytes(CType(DataGridView1(3, i).Value, Single)),
-                                 0, Temp_Array, &H30 + ChairCount * 8 + i * &H30, 4)
+                Buffer.BlockCopy(BitConverter.GetBytes(CType(DataGridView1(3, Counter).Value, Single)),
+                                     0, Temp_Array, &H30 + ChairCount * 8 + Counter * &H30, 4)
                 'Y Float
-                Buffer.BlockCopy(BitConverter.GetBytes(CType(DataGridView1(4, i).Value, Single)),
-                                 0, Temp_Array, &H34 + ChairCount * 8 + i * &H30, 4)
+                Buffer.BlockCopy(BitConverter.GetBytes(CType(DataGridView1(4, Counter).Value, Single)),
+                                     0, Temp_Array, &H34 + ChairCount * 8 + Counter * &H30, 4)
                 'Z Float
-                Buffer.BlockCopy(BitConverter.GetBytes(CType(DataGridView1(5, i).Value, Single)),
-                                 0, Temp_Array, &H38 + ChairCount * 8 + i * &H30, 4)
+                Buffer.BlockCopy(BitConverter.GetBytes(CType(DataGridView1(5, Counter).Value, Single)),
+                                     0, Temp_Array, &H38 + ChairCount * 8 + Counter * &H30, 4)
                 'RX Float
-                Buffer.BlockCopy(BitConverter.GetBytes(CType(DataGridView1(6, i).Value, Single)),
-                                 0, Temp_Array, &H3C + ChairCount * 8 + i * &H30, 4)
+                Buffer.BlockCopy(BitConverter.GetBytes(CType(DataGridView1(6, Counter).Value, Single)),
+                                     0, Temp_Array, &H3C + ChairCount * 8 + Counter * &H30, 4)
                 'RY Float
-                Buffer.BlockCopy(BitConverter.GetBytes(CType(DataGridView1(7, i).Value, Single)),
-                                 0, Temp_Array, &H40 + ChairCount * 8 + i * &H30, 4)
+                Buffer.BlockCopy(BitConverter.GetBytes(CType(DataGridView1(7, Counter).Value, Single)),
+                                     0, Temp_Array, &H40 + ChairCount * 8 + Counter * &H30, 4)
                 'RZ Float
-                Buffer.BlockCopy(BitConverter.GetBytes(CType(DataGridView1(8, i).Value, Single)),
-                                 0, Temp_Array, &H44 + ChairCount * 8 + i * &H30, 4)
+                Buffer.BlockCopy(BitConverter.GetBytes(CType(DataGridView1(8, Counter).Value, Single)),
+                                     0, Temp_Array, &H44 + ChairCount * 8 + Counter * &H30, 4)
                 'D1 Decimal
-                Buffer.BlockCopy(BitConverter.GetBytes(CInt(DataGridView1(9, i).Value)),
-                                 0, Temp_Array, &H48 + ChairCount * 8 + i * &H30, 4)
+                Buffer.BlockCopy(BitConverter.GetBytes(CInt(DataGridView1(9, Counter).Value)),
+                                     0, Temp_Array, &H48 + ChairCount * 8 + Counter * &H30, 4)
                 'D2 Decimal
-                Buffer.BlockCopy(BitConverter.GetBytes(CInt(DataGridView1(10, i).Value)),
-                                 0, Temp_Array, &H4C + ChairCount * 8 + i * &H30, 4)
+                Buffer.BlockCopy(BitConverter.GetBytes(CInt(DataGridView1(10, Counter).Value)),
+                                     0, Temp_Array, &H4C + ChairCount * 8 + Counter * &H30, 4)
                 'Temp_Array(&H30 + &H20 * ChairCount + i * 4) = Convert.ToInt16(Strings.Left(DataGridView1(0, i).Value.ToString, 2), 16)
                 'Temp_Array(&H30 + &H20 * ChairCount + i * 4) = Convert.ToInt16(Strings.Mid(DataGridView1(1, i).Value.ToString, 3, 2), 16)
                 'Temp_Array(&H30 + &H20 * ChairCount + i * 4) = Convert.ToInt16(Strings.Right(DataGridView1(2, i).Value.ToString, 2), 16)
-            Catch ex As Exception
-                MessageBox.Show(ex.Message & vbNewLine & i)
-            End Try
-        Next
-        File.WriteAllBytes(active_file, Temp_Array)
-        MessageBox.Show("File Saved")
+                Counter += 1
+            Loop
+        Catch ex As Exception
+            MessageBox.Show(ex.Message & vbNewLine & Counter)
+        Finally
+            File.Copy(active_file, active_file & ".bak", True)
+            File.WriteAllBytes(active_file, Temp_Array)
+            MessageBox.Show("File Saved")
+        End Try
+        'Next
+
     End Sub
     Private Sub OpenChairs(ByVal Source As String)
         Dim fileLength As Long
@@ -124,6 +133,29 @@ Public Class ObjectArrayEditor
                 Next
             End Using
             MessageBox.Show("File Saved")
+        End If
+    End Sub
+
+    Private Sub AddRowToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AddRowToolStripMenuItem.Click
+        If DataGridView1.SelectedRows.Count = 0 Then
+            Dim Temprow As DataGridViewRow = DataGridView1.Rows(DataGridView1.Rows.Count - 1).Clone
+            Temprow.Cells(0).Value = DataGridView1.Rows(DataGridView1.Rows.Count - 1).Cells(0).Value + 1
+            For i As Integer = 1 To Temprow.Cells.Count - 1
+                Temprow.Cells(i).Value = DataGridView1.Rows(DataGridView1.Rows.Count - 1).Cells(i).Value
+            Next
+            DataGridView1.Rows.Add(Temprow)
+            MessageBox.Show("Added row to the end of the file.")
+        Else
+            Dim Temprow As DataGridViewRow = DataGridView1.Rows(DataGridView1.SelectedRows(0).Index).Clone
+            Temprow.Cells(0).Value = DataGridView1.Rows(DataGridView1.SelectedRows(0).Index).Cells(0).Value + 1
+            For i As Integer = 1 To Temprow.Cells.Count - 1
+                Temprow.Cells(i).Value = DataGridView1.Rows(DataGridView1.SelectedRows(0).Index).Cells(i).Value
+            Next
+            For i As Integer = DataGridView1.SelectedRows(0).Index + 1 To DataGridView1.Rows.Count - 1
+                DataGridView1.Rows(i).Cells(0).Value += 1
+            Next
+            DataGridView1.Rows.Insert(DataGridView1.SelectedRows(0).Index + 1, Temprow)
+            MessageBox.Show("Added row after active row.")
         End If
     End Sub
 End Class
